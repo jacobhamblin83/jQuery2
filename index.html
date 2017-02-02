@@ -23,16 +23,31 @@
 
 	<!-- to-do main container -->
 	<section class="todo-main-container">
-		<div
-		class="progress-box"
-		id="newList">
+		<div class="progress-box" id="newList">
 			<h3>New To Dos</h3>
 		</div>
+		<div class="progress-box">
+	<h3>In Progress</h3>
+	<ul class="list-group" id="currentList"></ul>
+	</div>
 
-		<!--Add progress-box from the reademe-->
-	</section>
+	<div class="progress-box">
+	<h3>Complete</h3>
+	<ul class="list-group" id="archivedList"></ul>
+	</div>
+		</section>
+
+		<!--Add progress-box from the reademe-->		
 
 	<!-- FORM -->
+	<section id="newTaskForm">
+    		<h3 class="todo-form-title">New To Do </h3>
+    		<div  class="form-input-container">
+        		<img id="cancel" src="./img/icons/cross.png" alt="close form icon">
+        		<input id="newItemInput" class="todo-title-input form-input" type="text" placeholder="To-Do Title">
+        		<button  id="saveNewItem" class="complete-todo-button">Add To Do</button>
+    		</div>
+	</section>
 	<!--Add new task form here -->
 
 	<!-- FOOTER -->
@@ -44,6 +59,7 @@
 	<!--jQuery-->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<!--INclude your script file here -->
+	<script src="./scripts.js"></script>
 </main>
 </body>
 </html>
